@@ -1,0 +1,139 @@
+@use '../../styles/variables' as *;
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  // Estilização da Barra Superior
+  .topBar {
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 8px 0;
+
+    .listaTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: $color-border;
+        white-space: nowrap;
+
+        span {
+          color: $color-secondary;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  // Estilização do Bloco Central
+  .mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 12px 0;
+
+    .logoLink {
+      display: flex;
+      align-items: center;
+    }
+
+    .pesquisa {
+      flex: 1;
+      max-width: 630px;
+      height: 48px;
+      background-color: #f6f5f2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+
+      input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 14px;
+        color: $color-border;
+
+        &::placeholder {
+          color: #9f9f9f;
+        }
+      }
+
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .icones {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      a {
+        display: flex;
+        align-items: center;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  // Estilização do Menu de Navegação
+  .navigation {
+    padding-top: 8px;
+    padding-bottom: 12px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+
+      li a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        color: $color-border;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+
+        &:hover,
+        &.activeLink {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}

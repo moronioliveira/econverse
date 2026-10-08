@@ -1,0 +1,194 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  width: 100%;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* --- 1. Newsletter --- */
+  .newsletterSection {
+    background-color: #2a224b; // Tom escuro arroxeado/azulado
+    color: #ffffff;
+    padding: 40px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .newsletterText {
+      max-width: 480px;
+
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #e0e0e0;
+        line-height: 1.4;
+      }
+    }
+
+    .newsletterForm {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .inputsGroup {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        input {
+          padding: 12px 16px;
+          border-radius: 6px;
+          border: none;
+          min-width: 200px;
+          font-size: 14px;
+
+          &::placeholder {
+            color: #999999;
+          }
+        }
+
+        button {
+          background-color: #f6c500; // Amarelo
+          color: #2a224b;
+          border: none;
+          border-radius: 6px;
+          padding: 12px 24px;
+          font-weight: 700;
+          font-size: 14px;
+          cursor: pointer;
+          transition: opacity 0.2s ease;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .checkboxLabel {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #ffffff;
+        cursor: pointer;
+
+        input[type='checkbox'] {
+          accent-color: #f6c500;
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
+  /* --- 2. Conteúdo Principal (Fundo Claro) --- */
+  .mainContent {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    color: #333333;
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .brandInfo {
+      max-width: 300px;
+
+      .logo {
+        max-width: 160px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 13px;
+        color: #666666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .socialIcons {
+        display: flex;
+        gap: 16px;
+
+        a {
+          color: #333333;
+          font-size: 18px;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .divider {
+      width: 1px;
+      background-color: #e0e0e0;
+      align-self: stretch;
+    }
+
+    .navColumns {
+      display: flex;
+      gap: 80px;
+
+      .column {
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+          color: #333333;
+          margin-bottom: 16px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          li a {
+            text-decoration: none;
+            font-size: 13px;
+            color: #666666;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* --- 3. Barra de Copyright --- */
+  .copyrightBar {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px 0;
+
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #666666;
+    }
+  }
+}
