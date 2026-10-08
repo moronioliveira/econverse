@@ -1,75 +1,54 @@
-# React + TypeScript + Vite
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d3a158b3-484a-4cf0-83fa-489f91f7f5b9" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Teste Front-End - Econverse
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Projeto desenvolvido para o processo seletivo da Econverse para a vaga de Desenvolvedor Front-End.
+A aplicação consiste na reconstrução de uma landing page de e-commerce fidelizada ao Figma, com consumo de dados via JSON e modal interativo de produto.
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Vite)
+- **TypeScript**
+- **Sass / SCSS Modules**
+- **Fetch API** (Consumo de dados)
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Header Completo:** Navegação, barra de pesquisa, categorias e ícones institucionais.
+- **Banner Principal:** Seção promocional estilizada com HTML semântico.
+- **Vitrine de Produtos:** Consumo dinâmico do `api.json` com abas de filtro por categoria.
+- **Modal Interativo:** Exibição detalhada do produto selecionado, seletor de quantidade e CTA de compra.
+- **Banners Parceiros & Marcas:** Seções decorativas e navegação em carrossel visual.
+- **Footer Institucional:** Newsletter, links institucionais e ícones sociais importados em SVG.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Como Compilar e Rodar o Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Pré-requisitos
+- **Node.js** (versão 18 ou superior)
+- **npm** ou **yarn**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Passo a Passo
 
+1. **Clonar o repositório:**
+```bash
+git clone [https://github.com/moronioliveira/NOME_DO_SEU_REPOSITORIO.git](https://github.com/moronioliveira/NOME_DO_SEU_REPOSITORIO.git)
+cd NOME_DO_SEU_REPOSITORIO
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Instalar as Dependências**
+```bash
+npm install
+# ou
+yarn install
+````
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+3. **Executar o Projeto em Modo de Desenvolvimento**
+```bash
+npm run dev
+# ou
+yarn dev
+Acesse no seu navegador a URL informada no terminal (geralmente http://localhost:5173).
 ```
+
