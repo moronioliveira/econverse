@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Brands.module.scss';
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/icons/logo.svg';
 
 const brandsList = [1, 2, 3, 4, 5];
 

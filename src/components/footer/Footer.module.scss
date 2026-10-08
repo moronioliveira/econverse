@@ -9,10 +9,10 @@
     padding: 0 20px;
   }
 
-  /* --- 1. Newsletter --- */
+  
   .newsletterSection {
-    background-color: #2a224b; // Tom escuro arroxeado/azulado
-    color: #ffffff;
+    background-color: #2a224b; 
+    color: $color-text-light;
     padding: 40px 0;
 
     .container {
@@ -57,12 +57,12 @@
           font-size: 14px;
 
           &::placeholder {
-            color: #999999;
+            color: $color-text-secondary;
           }
         }
 
         button {
-          background-color: #f6c500; // Amarelo
+          background-color: $color-primary;
           color: #2a224b;
           border: none;
           border-radius: 6px;
@@ -83,11 +83,11 @@
         align-items: center;
         gap: 8px;
         font-size: 12px;
-        color: #ffffff;
+        color: $color-text-light;
         cursor: pointer;
 
         input[type='checkbox'] {
-          accent-color: #f6c500;
+          accent-color: $color-primary;
           width: 14px;
           height: 14px;
         }
@@ -95,7 +95,7 @@
     }
   }
 
-  /* --- 2. Conteúdo Principal (Fundo Claro) --- */
+  
   .mainContent {
     background-color: #f8f8f8;
     padding: 50px 0;
@@ -179,9 +179,9 @@
     }
   }
 
-  /* --- 3. Barra de Copyright --- */
+  
   .copyrightBar {
-    background-color: #ffffff;
+    background-color: $color-bg-main-card;
     border-top: 1px solid #e0e0e0;
     padding: 16px 0;
 

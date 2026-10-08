@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './Header.module.scss';
 
-import logo from '../../assets/logo.svg';
-import escudo from '../../assets/ShieldCheck.svg';
-import carro from '../../assets/Truck.svg';
-import cartao from '../../assets/CreditCard.svg';
-import caixa from '../../assets/Group.svg';
-import coracao from '../../assets/Heart.svg';
-import usuario from '../../assets/UserCircle.svg';
-import carrinho from '../../assets/ShoppingCart.svg';
-import lupa from '../../assets/MagnifyingGlass.svg';
-import coroa from '../../assets/CrownSimple.svg';
+import logo from '../../assets/icons/logo.svg';
+import escudo from '../../assets/icons/ShieldCheck.svg';
+import carro from '../../assets/icons/Truck.svg';
+import cartao from '../../assets/icons/CreditCard.svg';
+import caixa from '../../assets/icons/Group.svg';
+import coracao from '../../assets/icons/Heart.svg';
+import usuario from '../../assets/icons/UserCircle.svg';
+import carrinho from '../../assets/icons/ShoppingCart.svg';
+import lupa from '../../assets/icons/MagnifyingGlass.svg';
+import coroa from '../../assets/icons/CrownSimple.svg';
 
 const topBarItems = [
   {
@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
           </ul>
         </section>
 
-        {/* Cabeçalho Principal (Logo, Busca e Ações) */}
+        
         <section className={styles.mainHeader}>
           <a href="#" className={styles.logoLink}>
             <img src={logo} alt="Econverse" />
@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
           </nav>
         </section>
 
-        {/* Navegação Secundária por Categorias */}
+        
         <nav className={styles.navigation} aria-label="Categorias Principais">
           <ul>
             {navigationLinks.map((link) => (

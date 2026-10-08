@@ -53,7 +53,7 @@
     &:hover,
     &.active {
       .iconBox {
-        background-color: #ffffff;
+        background-color: $color-bg-main-card;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
       }
 

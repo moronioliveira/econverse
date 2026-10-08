@@ -16,7 +16,7 @@ const partnersData: BannerCard[] = [
     title: 'Parceiros',
     description: 'Lorem ipsum dolor sit amet, consectetur',
     buttonText: 'CONFIRA',
-    bgImage: bannerImg, // 2. Use a variável do import
+    bgImage: bannerImg, 
   },
   {
     id: 2,

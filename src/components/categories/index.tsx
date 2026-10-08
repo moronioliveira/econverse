@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './Categories.module.scss';
-
-// Imports com os nomes exatos dos ficheiros visíveis na pasta src/assets/icons
 import tecIcon from '../../assets/icons/tec.svg';
 import supermarketIcon from '../../assets/icons/supermarket.svg';
 import drinksIcon from '../../assets/icons/drinks.svg';
