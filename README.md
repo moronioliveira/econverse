@@ -32,8 +32,8 @@ A aplicação consiste na reconstrução de uma landing page de e-commerce fidel
 
 1. **Clonar o repositório:**
 ```bash
-git clone [https://github.com/moronioliveira/NOME_DO_SEU_REPOSITORIO.git](https://github.com/moronioliveira/NOME_DO_SEU_REPOSITORIO.git)
-cd NOME_DO_SEU_REPOSITORIO
+git clone [https://github.com/moronioliveira/econverse.git](https://github.com/moronioliveira/econverse.git)
+cd econverse
 npm install
 ```
 
